@@ -35,6 +35,15 @@
     --radius: 0.5rem;
   }
 
+ /* globals.css */
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -64,6 +73,11 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+  .monTitre {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3b82f6; /* bleu Tailwind */
+  }
 }
 
 @layer base {
@@ -86,6 +100,37 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
-}
 
+
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 1px #3365ef, 0 0 20px #3b5393;
+    }
+    50% {
+      text-shadow: 0 0 10px #3365ef, 0 0 10px #3b5393;
+    }
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(14deg); }
+    30% { transform: rotate(-8deg); }
+    40% { transform: rotate(14deg); }
+    50% { transform: rotate(-4deg); }
+    60% { transform: rotate(10deg); }
+    70% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .animate-wave {
+    animation: wave 2s infinite;
+  }
+  
+  
+}
 

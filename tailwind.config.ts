@@ -26,6 +26,7 @@ const config = {
       },
     },
     extend: {
+
       colors: {
         black: {
           DEFAULT: "#000",
@@ -76,6 +77,8 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -160,6 +163,11 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+
+      fontFamily: {
+        albert: ['"Albert Sans"', 'sans-serif'],
+        anta: ['"Anta"', 'cursive'],
+      },
     },
   },
   plugins: [
@@ -199,6 +207,8 @@ function addVariablesForColors({ addBase, theme }: any) {
   addBase({
     ":root": newVars,
   });
+
+  
 }
 
 export default config;
