@@ -5,7 +5,7 @@ import {Mail, Download} from 'lucide-react'
 import DevopsFloat from './DevopsFloat'
 
 import { hero } from '@/content/data'
-import { projects } from '@/content/data'
+
 
 
 
