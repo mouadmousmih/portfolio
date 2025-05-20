@@ -64,7 +64,7 @@ export default function Competences() {
           <h2
             className={cn(
               'text-4xl font-bold pb-3 text-[#3365ef] font-anta',
-              'animate-glow'
+              'md:animate-glow'
             )}
           >
             Ce que j’apporte sur la table

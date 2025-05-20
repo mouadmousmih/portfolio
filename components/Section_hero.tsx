@@ -39,7 +39,7 @@ const Section_hero = () => {
    
     <div className="relative z-20 mt-10 text-center">
     
-    <h1 className="text-4xl font-bold pb-5 sm:pb-3 text-[#3365ef] font-anta px-4 mx-16 sm:px-0 sm:mx-0"><span className=' animate-glow'>{hero.titleParts.beforeEmoji}<span className='inline-block animate-wave origin-[70%_70%]'>{hero.titleParts.emoji}</span>{hero.titleParts.afterEmoji}</span> </h1>
+    <h1 className="text-4xl font-bold pb-5 sm:pb-3 text-[#3365ef] font-anta px-4 mx-16 sm:px-0 sm:mx-0"><span className=''>{hero.titleParts.beforeEmoji}<span className='inline-block animate-wave origin-[70%_70%]'>{hero.titleParts.emoji}</span>{hero.titleParts.afterEmoji}</span> </h1>
       <h2 className=" font-lexend  pr-3 pl-3 font-medium  mx-8 sm:mx-0 tracking-widest text-[14px] text-blue-100 mb-2 ">{hero.subtitle.before} <span className='text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg '> {hero.subtitle.highlight1}
         </span> {hero.subtitle.middle} <span className='text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg'> {hero.subtitle.highlight2}</span> {hero.subtitle.after}
       </h2>

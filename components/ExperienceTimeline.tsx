@@ -11,7 +11,7 @@ export default function ExperienceTimeline() {
 
   return (
     <section className="bg-black pb-20  pt-6 sm:pt-10 px-6 text-white" id="experience">
-      <h2 className="text-4xl font-bold text-center text-[#3365ef] mb-12 font-anta animate-glow">
+      <h2 className="text-4xl font-bold text-center text-[#3365ef] mb-12 font-anta md:animate-glow">
         Mon expérience
       </h2>
 
