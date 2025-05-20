@@ -16,7 +16,7 @@ const Section_hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden">
     {/* Spotlights  */}
     <DevopsFloat/>
-    <Spotlight className="absolute top-0 w-40 h-40 md:w-[600px] md:h-[600px] blur-2xl opacity-70  " fill="blue" />
+    <Spotlight className="absolute top-0 w-40 h-40 md:w-[600px] md:h-[600px] blur-2xl opacity-50 z-20 " fill="blue" />
     <Spotlight className="absolute top-[80px] left-[1000px] w-40 h-40 md:w-[600px] md:h-[600px] blur-2xl opacity-50  rotate-180" fill="blue" />
     
     
@@ -40,16 +40,16 @@ const Section_hero = () => {
     <div className="relative z-20 mt-10 text-center">
     
     <h1 className="text-4xl font-bold pb-5 sm:pb-3 text-[#3365ef] font-anta px-4 mx-16 sm:px-0 sm:mx-0"><span className=' animate-glow'>{hero.titleParts.beforeEmoji}<span className='inline-block animate-wave origin-[70%_70%]'>{hero.titleParts.emoji}</span>{hero.titleParts.afterEmoji}</span> </h1>
-      <h2 className=" pr-3 pl-3 font-blod  mx-8 sm:mx-0 tracking-widest text-[14px] text-blue-100 mb-2 ">{hero.subtitle.before} <span className='text-[#3365ef] font-bold'> {hero.subtitle.highlight1}
-        </span> {hero.subtitle.middle} <span className='text-[#3365ef] font-bold'> {hero.subtitle.highlight2}</span> {hero.subtitle.after}
+      <h2 className=" font-lexend  pr-3 pl-3 font-medium  mx-8 sm:mx-0 tracking-widest text-[14px] text-blue-100 mb-2 ">{hero.subtitle.before} <span className='text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg '> {hero.subtitle.highlight1}
+        </span> {hero.subtitle.middle} <span className='text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg'> {hero.subtitle.highlight2}</span> {hero.subtitle.after}
       </h2>
-      <h2 className="   pr-3 pl-3   mx-4 sm:mx-0   tracking-widest text-[14px]  text-blue-100 mb-2">  
+      <h2 className=" font-lexend font-medium   pr-3 pl-3   mx-4 sm:mx-0   tracking-widest text-[14px]  text-blue-100 mb-2">  
         {hero.description}</h2>
    </div>
 
    <div className=' gap-4 mt-6  sm:flex px-16 sm:px-0  items-center z-20 '>
-      <a href="/cv.pdf" download className=' font-anta text-sm  mb-4 sm:mb-0 items-center flex  gap-1 px-6 py-2 border-[1.5px] hover:font-medium border-[#3365ef]  bg-[#3365ef] rounded-[16px]    text-white hover:bg-transparent hover:border hover:border-[#3365ef] hover:text-[#3365ef] transition duration-300 shadow-md '> <Download size={18}/> Télécharger CV</a>
-      <a href="" className='  font-anta text-sm items-center flex gap-1 px-6 py-2 border-[1.5px]   font-medium   border-[#3365ef] text-[#3365ef] rounded-[16px]  hover:bg-[#3365ef] hover:text-white transition duration-300 shadow-md  '> <Mail size={18} />  Contacter moi </a>
+      <a href={hero.buttons[0].href} download className=' font-anta text-sm  mb-4 sm:mb-0 items-center flex  gap-1 px-6 py-2 border-[1.5px] hover:font-medium border-[#3365ef]  bg-[#3365ef] rounded-[16px]    text-white hover:bg-transparent hover:border hover:border-[#3365ef] hover:text-[#3365ef] transition duration-300 shadow-md '> <Download size={18}/> {hero.buttons[0].label}</a>
+      <a href={hero.buttons[1].href} className='  font-anta text-sm items-center flex gap-1 px-6 py-2 border-[1.5px]   font-bold   border-[#3365ef] text-[#3365ef] rounded-[16px]  hover:bg-[#3365ef] hover:font-normal hover:text-white transition duration-300 shadow-md  '> <Mail size={18} />  {hero.buttons[1].label} </a>
     </div>
   </section>
   )

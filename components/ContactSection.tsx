@@ -42,7 +42,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/ton-profil"
+                href="https://www.linkedin.com/in/mouadmousmih/"
                 target="_blank"
                 className="flex items-center font-anta gap-2 px-6 py-2 border border-[#3365ef] text-[#3365ef] rounded-lg hover:bg-[#3365ef] hover:text-white transition duration-300"
               >

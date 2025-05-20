@@ -167,6 +167,7 @@ const config = {
       fontFamily: {
         albert: ['"Albert Sans"', 'sans-serif'],
         anta: ['"Anta"', 'cursive'],
+          lexend: ['Lexend', 'sans-serif'],
       },
     },
   },

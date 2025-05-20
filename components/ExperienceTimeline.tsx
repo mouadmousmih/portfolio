@@ -2,39 +2,8 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-
-const experiences = [
-  {
-    id: 1,
-    title: "Stage de Fin d'Études - Licence",
-    entreprise: 'MDB Technologies',
-    date: '04/23 - 06/23',
-    contexte:
-      "L’entreprise souhaitait une plateforme interne pour la gestion de documents partagés entre services.",
-    taches: [
-      "Création d’une API REST sécurisée avec Node.js et JWT.",
-      "Développement de l’interface en React avec Tailwind CSS.",
-      "Déploiement via Docker sur serveur Linux.",
-    ],
-    action:
-      "Participation active à toutes les phases du projet : analyse, développement, tests, mise en production.",
-  },
-  {
-    id: 2,
-    title: "Stage de Fin d'Études - DUT",
-    entreprise: 'OCP Group',
-    date: '04/22 - 06/22',
-    contexte:
-      'Besoin de stocker et partager des fichiers en ligne de façon sécurisée.',
-    taches: [
-      'Développement de l’application "myStorage" pour stocker et partager des fichiers.',
-      'Mise en place d’un système d’authentification sécurisé.',
-      'Supervision des logs avec Grafana.',
-    ],
-    action:
-      "Création d’une interface utilisateur fluide et responsive, avec focus sur l’expérience utilisateur.",
-  },
-]
+import {experiences}  from '@/content/data'
+ 
 
 export default function ExperienceTimeline() {
   const [active, setActive] = useState(0)
@@ -66,7 +35,7 @@ export default function ExperienceTimeline() {
               ></span>
 
               <div className="bg-[#121212] p-4 rounded-lg shadow-md">
-                <h3 className="font-semibold text-white">{exp.title}</h3>
+                <h3 className=" font-lexend font-semibold text-white">{exp.title}</h3>
                 <p className="text-sm text-gray-400">{exp.entreprise}</p>
                 <p className="text-xs text-[#3365ef] mt-2">{exp.date}</p>
               </div>
@@ -83,20 +52,20 @@ export default function ExperienceTimeline() {
           className="md:col-span-2 bg-[#121212] p-6 rounded-xl shadow-[0_6px_28px_rgba(51,101,239,0.2)] hover:shadow-[0_6px_28px_rgba(51,101,239,0.4)] transition duration-300"
         >
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-2xl font-bold text-white">{current.title}</h3>
+            <h3 className="text-2xl font-lexend font-bold text-white">{current.title}</h3>
             <span className="text-sm text-[#3365ef] bg-[#3365ef]/10 px-3 py-1 rounded-md">
               {current.date}
             </span>
           </div>
-          <p className="text-sm italic text-gray-400 mb-4">{current.entreprise}</p>
+          <p className="text-sm italic font-lexend text-gray-400 mb-4">{current.entreprise}</p>
 
-          <div className="text-gray-300 space-y-4 text-sm leading-relaxed">
+          <div className="text-gray-300 font-lexend space-y-4 text-sm leading-relaxed">
             <p>
-              <span className="font-semibold text-white">Contexte :</span>{' '}
+              <span className="font-semibold font-lexend text-white">Contexte :</span>{' '}
               {current.contexte}
             </p>
             <div>
-              <span className="font-semibold text-white">Tâches :</span>
+              <span className="font-semibold font-lexend text-white">Tâches :</span>
               <ul className="list-disc pl-5 mt-1">
                 {current.taches.map((t, i) => (
                   <li key={i}>{t}</li>
@@ -104,7 +73,7 @@ export default function ExperienceTimeline() {
               </ul>
             </div>
             <p>
-              <span className="font-semibold text-white">Action :</span>{' '}
+              <span className="font-semibold font-lexend text-white">Action :</span>{' '}
               {current.action}
             </p>
           </div>

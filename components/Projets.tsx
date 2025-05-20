@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { projects } from '@/content/data'
+import {projects_paragraphe} from  '@/content/data'
 
 export default function Projets() {
   return (
@@ -12,9 +13,8 @@ export default function Projets() {
         <h2 className="text-4xl font-bold text-[#3365ef] font-anta animate-glow">
           Mes Projets
         </h2>
-        <p className="text-gray-400 mt-3">
-          Voici quelques projets récents que j’ai réalisés pour mettre en
-          pratique mes compétences en Dev & DevOps.
+        <p className="text-gray-400 mt-3 font-lexend">
+        {projects_paragraphe.text}
         </p>
       </div>
 
@@ -36,8 +36,8 @@ export default function Projets() {
 
             {/* Contenu */}
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
-              <p className="text-sm text-gray-400">{proj.description}</p>
+              <h3 className="text-lg font-semibold mb-2 font-lexend">{proj.title}</h3>
+              <p className="text-sm text-gray-300  font-lexend ">{proj.description}</p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mt-4">
@@ -57,7 +57,8 @@ export default function Projets() {
                   <a
                     href={proj.github}
                     target="_blank"
-                    className="flex items-center gap-1 text-sm text-[#3365ef] hover:underline"
+            
+                    className=" flex items-center gap-1 text-sm  hover:underline  text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg    "
                   >
                     <FaGithub /> Code
                   </a>
@@ -66,7 +67,7 @@ export default function Projets() {
                   <a
                     href={proj.demo}
                     target="_blank"
-                    className="flex items-center gap-1 text-sm text-[#3365ef] hover:underline"
+                    className="flex items-center gap-1 text-sm  hover:underline  text-[#3365ef] font-semibold bg-[#3365ef]/20 px-2 py-0.5 rounded-lg "
                   >
                     <FaExternalLinkAlt /> Démo
                   </a>

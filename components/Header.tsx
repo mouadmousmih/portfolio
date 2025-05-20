@@ -14,10 +14,10 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="hidden md:flex ml-10 gap-6 text-white text-[16px] font-anta font-normal">
-          <a href="#Section_hero" className="hover:text-[#3365ef] hover:font-bold">Accueil</a>
+          <a href="#Section_hero" className="hover:text-[#3365ef] hover:font-bold  ">Accueil</a>
           <a href="#Competences" className="hover:text-[#3365ef] hover:font-bold ">Compétences</a>
-          <a href="#projets" className="hover:text-[#3365ef] hover:font-bold ">Projets</a>
-          <a href="#experiences" className="hover:text-[#3365ef] hover:font-bold ">Expériences</a>
+          <a href="#projets" className="hover:text-[#3365ef] hover:font-bold  ">Projets</a>
+          <a href="#ExperienceTimeline" className="hover:text-[#3365ef] hover:font-bold ">Expériences</a>
         </nav>
 
         {/* Icônes + Bouton */}
@@ -27,7 +27,7 @@ export default function Header() {
           <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white">
             <Github size={16} />
           </a>
-          <a href="#" className="p-2 rounded-full border  bg-white/10 hover:bg-white/20 transition text-white">
+          <a href="https://www.linkedin.com/in/mouadmousmih/" className="p-2 rounded-full border  bg-white/10 hover:bg-white/20 transition text-white">
             <Linkedin size={16} />
           </a>
 
