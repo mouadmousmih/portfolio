@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail,Github ,Linkedin } from 'lucide-react'
+import {Github ,Linkedin } from 'lucide-react'
 
 
 export default function Header() {
@@ -30,16 +30,6 @@ export default function Header() {
           <a href="https://www.linkedin.com/in/mouadmousmih/" className="p-2 rounded-full border  bg-white/10 hover:bg-white/20 transition text-white">
             <Linkedin size={16} />
           </a>
-
-          
-
-
-
-
-
-
-
-
         </div>
       </div>
     </header>

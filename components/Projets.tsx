@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import { projects } from '@/content/data'
-import {projects_paragraphe} from  '@/content/data'
+
+import {projects, projects_paragraphe} from  '@/content/data'
 
 export default function Projets() {
   return (
