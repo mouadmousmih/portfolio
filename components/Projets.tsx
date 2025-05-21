@@ -7,7 +7,7 @@ import {projects, projects_paragraphe} from  '@/content/data'
 
 export default function Projets() {
   return (
-    <section className="pb-20 pt-6 sm:pt-8 px-6 bg-black text-white" id="projets">
+    <section className="pb-20 pt-6 sm:pt-8 px-6 bg-black text-white  scroll-mt-24" id="projets">
       {/* Titre */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-[#3365ef] font-anta md:animate-glow">

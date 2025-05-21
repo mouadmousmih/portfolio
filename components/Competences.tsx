@@ -57,7 +57,7 @@ const sectionIcons = {
 export default function Competences() {
   return (
     
-    <section className="pb-20 px-auto sm:px-6  bg-black text-white" id="competences">
+    <section className="pb-20 px-auto sm:px-6  bg-black text-white  scroll-mt-24" id="Competences">
       <div className="max-w-7xl mx-auto  ml-8 mr-8 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Gauche : Intro */}
         <div>

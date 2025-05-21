@@ -13,7 +13,7 @@ import { hero } from '@/content/data'
 
 const Section_hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden">
+    <section  id="Section_hero" className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden">
     {/* Spotlights  */}
     <DevopsFloat/>
     <Spotlight className="absolute top-0 w-40 h-40 md:w-[600px] md:h-[600px] blur-2xl opacity-50 z-20 " fill="blue" />

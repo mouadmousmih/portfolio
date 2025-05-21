@@ -7,7 +7,7 @@ export default function ContactSection() {
     <>
       <section
         id="contact"
-        className="relative pt-0 sm:pt-6 pb-6 px-6 bg-black text-white overflow-hidden"
+        className="relative pt-0 sm:pt-6 pb-6 px-6 bg-black text-white overflow-hidden scroll-mt-24"
       >
         {/* Boîte principale avec animation à l’intérieur */}
         <div className="relative z-10 max-w-3xl mx-auto text-center rounded-xl p-6 overflow-hidden border border-white/10 shadow-[0_4px_20px_rgba(51,101,239,0.15)] hover:shadow-[0_6px_28px_rgba(51,101,239,0.4)] transition duration-300"
@@ -27,7 +27,7 @@ export default function ContactSection() {
 
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="/cv.pdf"
+                href="/Mouad_Mousmih_CV.pdf"
                 download
                 className="flex items-center font-anta gap-2 px-6 py-2 bg-[#3365ef] text-white rounded-lg font-medium hover:bg-[#264fd4] transition duration-300"
               >
@@ -35,7 +35,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="mailto:mouad@example.com"
+                href="mailto:mouadmousmih@gmail.com"
                 className="flex font-anta items-center gap-2 px-6 py-2 border border-[#3365ef] text-[#3365ef] rounded-lg hover:bg-[#3365ef] hover:text-white transition duration-300"
               >
                 <Mail size={18} /> Me contacter

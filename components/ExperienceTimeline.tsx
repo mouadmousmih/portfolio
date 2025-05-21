@@ -10,7 +10,7 @@ export default function ExperienceTimeline() {
   const current = experiences[active]
 
   return (
-    <section className="bg-black pb-20  pt-6 sm:pt-10 px-6 text-white" id="experience">
+    <section className="bg-black pb-20  pt-6 sm:pt-10 px-6 text-white  scroll-mt-24" id="ExperienceTimeline">
       <h2 className="text-4xl font-bold text-center text-[#3365ef] mb-12 font-anta md:animate-glow">
         Mon expérience
       </h2>

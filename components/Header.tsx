@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           {/* Icônes sociales */}
           
-          <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white">
+          <a href="https://github.com/mouadmousmih" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white">
             <Github size={16} />
           </a>
           <a href="https://www.linkedin.com/in/mouadmousmih/" className="p-2 rounded-full border  bg-white/10 hover:bg-white/20 transition text-white">

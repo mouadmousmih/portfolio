@@ -25,13 +25,13 @@ export const hero = {
     buttons: [
       {
         label: "Télécharger CV",
-        href: "/cv.pdf",
+        href: "/Mouad_Mousmih_CV.pdf",
         icon: "download",
         type: "download",
       },
       {
         label: "Me contacter",
-        href: "mailto:mouad@example.com",
+        href: "mailto:mouadmousmih@gmail.com",
         icon: "mail",
       },
     ],
