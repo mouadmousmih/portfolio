@@ -18,7 +18,7 @@ export default function ContactSection() {
           {/* Contenu au-dessus */}
           <div className="relative z-10">
             <h2 className="text-4xl font-bold text-[#3365ef] font-anta md:animate-glow mb-4">
-              Parlons de ton prochain projet
+              Parlons de Votre prochain projet
             </h2>
             <p className="text-gray-400 mb-8 font-anta">
               Vous avez une idée ou vous cherchez un alternant motivé en DevOps / Web ? <br />
