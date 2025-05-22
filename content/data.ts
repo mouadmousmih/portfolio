@@ -55,8 +55,8 @@ export const hero = {
     description: "Développement d’un portfolio moderne avec Next.js et Tailwind CSS pour présenter mes compétences, projets et expériences. Intégration d’animations, design responsive, et séparation du contenu dans des fichiers pour faciliter l’édition future via CMS.",
     image: "/image.png",
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Design Responsive', 'Sentry'],
-    github: 'https://github.com/mouad/portfolio',
-    demo: 'https://mouad.vercel.app'
+    github: 'https://github.com/mouadmousmih/portfolio',
+    demo: ''
   },
   
   {
@@ -64,7 +64,7 @@ export const hero = {
     description: 'Développement d’une interface web pour lancer des déploiements Docker automatisés sur différents environnements',
     image: '/projet_deploy.png',
     tags: ['React.js', 'Node.js', 'Docker', 'GitHub Actions', 'JWT', 'MongoDB'],
-    github: 'https://github.com/mouad/devops-saas',
+    github: 'https://github.com/mouadmousmih',
     demo: '',
   },
   
@@ -73,8 +73,8 @@ export const hero = {
       description: 'Implémentation en Java d’une simulation visant à tester des algorithmes de reroutage de camions pour optimiser la récupération de conteneurs frigorifiques vides tout en minimisant les coûts de trajet',
       image: '/tpe.png',
       tags: ['Java', 'Algorithmique', 'Simulation', 'Optimisation', 'Graphe'],
-      github: '', // Ajoute le lien si tu as mis le code sur GitHub
-      demo: '',   // Idem si tu veux ajouter une démo ou une vidéo
+      github: '', 
+      demo: '',   
     }
    
 ]
