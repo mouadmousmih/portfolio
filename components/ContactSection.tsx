@@ -27,7 +27,7 @@ export default function ContactSection() {
 
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="/Mouad_Mousmih_CV.pdf"
+                href="/MOUSMIH__Mouad.pdf"
                 download
                 className="flex items-center font-anta gap-2 px-6 py-2 bg-[#3365ef] text-white rounded-lg font-medium hover:bg-[#264fd4] transition duration-300"
               >

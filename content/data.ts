@@ -25,7 +25,7 @@ export const hero = {
     buttons: [
       {
         label: "Télécharger CV",
-        href: "/Mouad_Mousmih_CV.pdf",
+        href: "/MOUSMIH__Mouad.pdf",
         icon: "download",
         type: "download",
       },
