@@ -1,92 +1,80 @@
-
-
-
-
 // content/hero.ts
 
-
 export const hero = {
-        titleParts: {
-          beforeEmoji: "Salut",
-          emoji: "👋",
-          afterEmoji: ", c’est Mouad"
-        },
-      
-        subtitle: {
-          before: "Étudiant en Master",
-          highlight1: "Ingénierie du Web",
-          middle: "& Objets Connectés, Je cherche une",
-          highlight2: "alternance",
-          after: "dès septembre 2025.",
-        },
-        description:
-          "Passionné de dev, fan de défis, et surtout... prêt à ne pas casser la prod (enfin, j’essaie)",
-      
-    buttons: [
-      {
-        label: "Télécharger CV",
-        href: "/MOUSMIH__Mouad.pdf",
-        icon: "download",
-        type: "download",
-      },
-      {
-        label: "Me contacter",
-        href: "mailto:mouadmousmih@gmail.com",
-        icon: "mail",
-      },
-    ],
-  }
-  
+  titleParts: {
+    beforeEmoji: "Salut",
+    emoji: "👋",
+    afterEmoji: ", c'est Mouad",
+  },
 
+  subtitle: {
+    before: "Étudiant en Master",
+    highlight1: "Ingénierie du Web",
+    middle: "& Objets Connectés, Je cherche une",
+    highlight2: "alternance",
+    after: "dès septembre 2025.",
+  },
+  description:
+    "Passionné de dev, fan de défis, et surtout... prêt à ne pas casser la prod (enfin, j'essaie)",
 
+  buttons: [
+    {
+      label: "Télécharger CV",
+      href: "/MOUSMIH__Mouad.pdf",
+      icon: "download",
+      type: "download",
+    },
+    {
+      label: "Me contacter",
+      href: "mailto:mouadmousmih@gmail.com",
+      icon: "mail",
+    },
+  ],
+};
 
-  // data des projects 
+// data des projects
 
+export const projects_paragraphe = {
+  text: "Voici quelques projets récents que j'ai réalisés pour mettre en pratique mes compétences en Dev & DevOps.",
+};
 
-
-  export const projects_paragraphe = { 
-    text: " Voici quelques projets récents que j’ai réalisés pour mettre en pratique mes compétences en Dev & DevOps."}
-
-
-
- export const projects = [
+export const projects = [
   {
     title: "Portfolio personnel – Développeur Full Stack & DevOps",
-    description: "Développement d’un portfolio moderne avec Next.js et Tailwind CSS pour présenter mes compétences, projets et expériences. Intégration d’animations, design responsive, et séparation du contenu dans des fichiers pour faciliter l’édition future via CMS.",
+    description:
+      "Développement d'un portfolio moderne avec Next.js et Tailwind CSS pour présenter mes compétences, projets et expériences. Intégration d'animations, design responsive, et séparation du contenu dans des fichiers pour faciliter l'édition future via CMS.",
     image: "/image.png",
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Design Responsive', 'Sentry'],
-    github: 'https://github.com/mouadmousmih/portfolio',
-    demo: ''
+    tags: ["Next.js", "React", "Tailwind CSS", "Design Responsive", "Sentry"],
+    github: "https://github.com/mouadmousmih/portfolio",
+    demo: "",
   },
-  
   {
-    title: 'Plateforme de déploiement d’applications conteneurisées ',
-    description: 'Développement d’une interface web pour lancer des déploiements Docker automatisés sur différents environnements',
-    image: '/projet_deploy.png',
-    tags: ['React.js', 'Node.js', 'Docker', 'GitHub Actions', 'JWT', 'MongoDB'],
-    github: 'https://github.com/mouadmousmih',
-    demo: '',
+    title: `Plateforme de déploiement d'applications conteneurisées`,
+    description:
+      `Développement d'une interface web pour lancer des déploiements Docker automatisés sur différents environnements`,
+    image: "/projet_deploy.png",
+    tags: ["React.js", "Node.js", "Docker", "GitHub Actions", "JWT", "MongoDB"],
+    github: "https://github.com/mouadmousmih",
+    demo: "",
   },
-  
-    {
-      title: 'Simulation Java pour l’optimisation du reroutage de camions frigorifiques',
-      description: 'Implémentation en Java d’une simulation visant à tester des algorithmes de reroutage de camions pour optimiser la récupération de conteneurs frigorifiques vides tout en minimisant les coûts de trajet',
-      image: '/tpe.png',
-      tags: ['Java', 'Algorithmique', 'Simulation', 'Optimisation', 'Graphe'],
-      github: '', 
-      demo: '',   
-    }
-   
-]
+  {
+    title: `Simulation Java pour l'optimisation du reroutage de camions frigorifiques`,
+    description:
+      `Implémentation en Java d'une simulation visant à tester des algorithmes de reroutage de camions pour optimiser la récupération de conteneurs frigorifiques vides tout en minimisant les coûts de trajet`,
+    image: "/tpe.png",
+    tags: ["Java", "Algorithmique", "Simulation", "Optimisation", "Graphe"],
+    github: "",
+    demo: "",
+  },
+];
 
-
-
-// experiences 
+// experiences
 export const experiences = [
- {
+  {
     id: 1,
     title: "Stagiaire Développeur Backend & DevOps",
-    entreprise: "OCP Group (Office Chérifien des Phosphates) — DSI · Casablanca, Maroc",
+    entreprise:
+      "OCP Group (Office Chérifien des Phosphates) — DSI · Casablanca, Maroc",
     date: "Mars – Juin 2025",
     contexte:
       "La DSI du groupe OCP souhaitait développer une API interne pour le suivi des équipements industriels, tout en modernisant sa chaîne de livraison via la conteneurisation et l'automatisation CI/CD.",
@@ -115,5 +103,4 @@ export const experiences = [
     action:
       "Contribution au développement backend et à l'automatisation des flux de données pour améliorer le traitement des réclamations clients.",
   },
- 
 ];
